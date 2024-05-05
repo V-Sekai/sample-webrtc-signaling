@@ -37,15 +37,6 @@ layout_mode = 2
 toggle_mode = true
 text = "Listen"
 
-[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/Signaling"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="LinkButton" type="LinkButton" parent="VBoxContainer/Signaling/CenterContainer"]
-layout_mode = 2
-text = "Make sure to download the GDNative WebRTC Plugin and place it in the project folder"
-
 [node name="Clients" type="GridContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -68,4 +59,3 @@ layout_mode = 2
 script = ExtResource("3")
 
 [connection signal="toggled" from="VBoxContainer/Signaling/ListenButton" to="." method="_on_listen_toggled"]
-[connection signal="pressed" from="VBoxContainer/Signaling/CenterContainer/LinkButton" to="." method="_on_LinkButton_pressed"]
